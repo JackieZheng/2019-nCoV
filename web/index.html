@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="Generator" content="EditPlus®">
 	<meta name="Author" content="">
 	<meta name="Keywords" content="">
@@ -10,16 +11,29 @@
 	<title>全国新型肺炎疫情每日动态</title>
 	<script src="https://cdn.bootcss.com/echarts/4.4.0-rc.1/echarts.min.js"></script>
 	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+		}
+
 		#dataFrom {
 			font-size: 14px;
 			text-align: right;
 			margin-right: 40px;
 		}
+
+		#main {
+			width: 100%;
+			height: calc(100% - 60px);
+		}
 	</style>
 </head>
 
 <body>
-	<div id="main" style="width: 100%;height:600px;"></div>
+	<div id="main"></div>
 	<div id="dataFrom">(数据来源：<a href="http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml"
 			target="_blank">中华人民共和国国家卫生健康委员会</a>)</div>
 	<script type="text/javascript">
@@ -183,6 +197,7 @@
 
 
 		myChart.setOption(option);
+		window.onresize = () => this.myChart.resize();
 	</script>
 </body>
 
