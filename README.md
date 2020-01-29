@@ -1,6 +1,8 @@
 # 2019-nCoV
 全国新型肺炎疫情每日数据动态
 
+数据来源：中华人民共和国国家卫生健康委员会 http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml
+
 ![avatar](https://github.com/JackieZheng/2019-nCoV/blob/master/Image/20200129.png)
 
 
