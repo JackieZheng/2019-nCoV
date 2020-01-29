@@ -13,4 +13,7 @@
 
 腾讯新闻 提供实时全国数据 https://news.qq.com/zt2020/page/feiyan.htm
 
+腾讯新闻 提供实时全国数据 https://news.sina.cn/zt_d/yiqing0121
+
 2019-nCoV 新型肺炎确诊患者相同行程查询工具 http://2019ncov.nosugartech.com/
+
