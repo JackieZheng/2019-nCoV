@@ -5,9 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="Generator" content="EditPlus®">
-	<meta name="Author" content="">
-	<meta name="Keywords" content="">
-	<meta name="Description" content="">
+	<meta name="Author" content="JackieZheng">
+	<meta name="Keywords" content="2019-nCoV,肺炎,疫情,中华菊头蝠,冠状病毒,感染">
+	<meta name="Description" content="2019-nCoV全国新型肺炎疫情每日动态">
 	<title>全国新型肺炎疫情每日动态</title>
 	<script src="https://cdn.bootcss.com/echarts/4.4.0-rc.1/echarts.min.js"></script>
 	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
@@ -40,6 +40,7 @@
 	<script type="text/javascript">
 		var myChart = echarts.init(document.getElementById('main'));
 		var dataSource = [];
+
 		$.ajaxSettings.async = false;
 		$.getJSON("../Json/data.json?" + Date.parse(new Date()), function (data) {
 			dataSource = data;
