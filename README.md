@@ -3,7 +3,7 @@
 
 数据来源：中华人民共和国国家卫生健康委员会 http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml
 
-![avatar](https://github.com/JackieZheng/2019-nCoV/blob/master/Image/20200129.png)
+[![点击查看图表](https://github.com/JackieZheng/2019-nCoV/blob/master/Image/20200129.png)](https://jackiezheng.github.io/2019-nCoV/web/index.html)
 
 
 
