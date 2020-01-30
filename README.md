@@ -14,7 +14,9 @@
 
 腾讯新闻 提供实时全国数据 https://news.sina.cn/zt_d/yiqing0121
 
-2019-nCoV 新型肺炎确诊患者相同行程查询工具 http://2019ncov.nosugartech.com/
+2019-nCoV 新型肺炎确诊患者相同行程查询工具 1.2 http://2019ncov.nosugartech.com/
+
+人民网新型冠状病毒感染的肺炎确诊患者同行程查询工具 v1.3 https://h5.peopleapp.com/txcx/index.html
 
 新型冠状病毒肺炎预防指南 https://mp.weixin.qq.com/s/95O_QKp2oxY2bHqucFfolw
 
