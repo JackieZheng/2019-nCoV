@@ -8,17 +8,23 @@
 
 # 相关链接：
 
+### 数据
+
 丁香园·丁香医生 提供实时全国数据 https://3g.dxy.cn/newh5/view/pneumonia
 
 腾讯新闻 提供实时全国数据 https://news.qq.com/zt2020/page/feiyan.htm
 
-腾讯新闻 提供实时全国数据 https://news.sina.cn/zt_d/yiqing0121
+新浪新闻 提供实时全国数据 https://news.sina.cn/zt_d/yiqing0121
+
+### 工具
 
 2019-nCoV 新型肺炎确诊患者相同行程查询工具 1.2 http://2019ncov.nosugartech.com/
 
 新型冠状病毒感染的肺炎确诊患者同行程查询工具（人民网） v1.3 https://h5.peopleapp.com/txcx/index.html
 
 患者同程查询（搜狗） https://sa.sogou.com/new-weball/page/sgs/epidemic/yyxw
+
+### 资料
 
 新型冠状病毒肺炎预防指南 https://mp.weixin.qq.com/s/95O_QKp2oxY2bHqucFfolw
 
