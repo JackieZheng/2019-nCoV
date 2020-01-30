@@ -6,7 +6,7 @@
 
 [![点击查看图表](https://github.com/JackieZheng/2019-nCoV/blob/master/Image/20200130.png)](https://jackiezheng.github.io/2019-nCoV/web/index.html)
 
-相关链接：
+# 相关链接：
 
 丁香园·丁香医生 提供实时全国数据 https://3g.dxy.cn/newh5/view/pneumonia
 
@@ -18,7 +18,7 @@
 
 新型冠状病毒肺炎预防指南 https://mp.weixin.qq.com/s/95O_QKp2oxY2bHqucFfolw
 
-# 2020，互联网各公司春节后延迟上班时间出炉！（截止 2020.01.19 ）
+# 2020，互联网各公司春节后延迟上班时间出炉！（截止 2020.01.29 ）
 
 [来源：https://baijiahao.baidu.com/s?id=1657060686550642895&wfr=spider&for=pc]
 
