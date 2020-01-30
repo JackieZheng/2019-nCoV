@@ -16,13 +16,16 @@
 
 2019-nCoV 新型肺炎确诊患者相同行程查询工具 1.2 http://2019ncov.nosugartech.com/
 
-人民网新型冠状病毒感染的肺炎确诊患者同行程查询工具 v1.3 https://h5.peopleapp.com/txcx/index.html
+新型冠状病毒感染的肺炎确诊患者同行程查询工具（人民网） v1.3 https://h5.peopleapp.com/txcx/index.html
+
+患者同程查询（搜狗） https://sa.sogou.com/new-weball/page/sgs/epidemic/yyxw
 
 新型冠状病毒肺炎预防指南 https://mp.weixin.qq.com/s/95O_QKp2oxY2bHqucFfolw
 
 转扩！上班族返岗后如何防护？这份建议很重要！ https://mp.weixin.qq.com/s/N5DmjCyAh5_f9m4zowV8nw
 
 ![抗击疫情我们一定能赢](https://github.com/JackieZheng/2019-nCoV/blob/master/Image/1.png)
+
 ![除了战胜它我们别无选择](https://github.com/JackieZheng/2019-nCoV/blob/master/Image/2.png)
 
 # 国家及地区层面当前已出台的春节后延迟上班政策：
