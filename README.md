@@ -18,9 +18,9 @@
 
 新型冠状病毒肺炎预防指南 https://mp.weixin.qq.com/s/95O_QKp2oxY2bHqucFfolw
 
-# 2020，互联网各公司春节后延迟上班时间出炉！（截止 2020.01.29 ）
+# 2020，互联网各公司春节后延迟上班时间出炉！
 
-[来源：https://baijiahao.baidu.com/s?id=1657060686550642895&wfr=spider&for=pc]
+（截止 2020.01.29 ）
 
 ## 国家及地区层面当前已出台的政策：
 
@@ -115,3 +115,5 @@
 9.虎牙：2.3 上班
 
 10.得物：2.3 上班
+
+[以上信息来源：https://baijiahao.baidu.com/s?id=1657060686550642895&wfr=spider&for=pc]
