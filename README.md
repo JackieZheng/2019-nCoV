@@ -22,6 +22,9 @@
 
 转扩！上班族返岗后如何防护？这份建议很重要！ https://mp.weixin.qq.com/s/N5DmjCyAh5_f9m4zowV8nw
 
+![抗击疫情我们一定能赢](https://github.com/JackieZheng/2019-nCoV/blob/master/Image/1.png)
+![除了战胜它我们别无选择](https://github.com/JackieZheng/2019-nCoV/blob/master/Image/2.png)
+
 # 国家及地区层面当前已出台的春节后延迟上班政策：
 
 1.全国：春节法定休息日延长至 2 月 2 日。
