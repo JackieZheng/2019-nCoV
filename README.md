@@ -6,6 +6,8 @@
 
 [![点击查看图表](https://github.com/JackieZheng/2019-nCoV/blob/master/Image/20200130.png)](https://jackiezheng.github.io/2019-nCoV/web/index.html)
 
+图表：https://jackiezheng.github.io/2019-nCoV/web
+
 # 相关链接：
 
 ### 数据
