@@ -51,11 +51,18 @@
 			padding: 5px 50px;
 			text-align: center;
 		}
+
+		.datasubtitle {
+			font-size: 14px;
+			padding: 5px 50px;
+			text-align: center;
+		}
 	</style>
 </head>
 
 <body>
-	<div class="datatitle">截至 2020-01-31 08:09 全国数据统计</div>
+	<div class="datatitle">全国疫情实时数据统计</div>
+	<div class="datasubtitle">(截至 2020-01-31 08:09)</div>
 	<ul class="statistics">
 		<li><strong style="color: rgb(247, 76, 49);">9720</strong><span>确诊病例</span></li>
 		<li><strong style="color: rgb(247, 130, 7);">15238</strong><span>疑似病例</span></li>
@@ -129,17 +136,18 @@
 		};
 		myChart.setOption(option);
 		window.onresize = () => this.myChart.resize();
-
 		update();
-		window.setInterval(() => update, 1000 * 60 * 5);
+
+		window.setInterval(() => update(), 1000 * 60 * 5);
 
 		function update() {
 			$.getJSON("https://service-nxxl1y2s-1252957949.gz.apigw.tencentcs.com/release/newpneumonia/" + Date.parse(new Date()), function (newpneumoniadata) {
-				$(".datatitle").text("截至 " + newpneumoniadata.data.conf.component[0].mapLastUpdatedTime + " 全国数据统计");
+				$(".datasubtitle").text("(截至 " + newpneumoniadata.data.conf.component[0].mapLastUpdatedTime + ")");
 				$(".statistics>li>strong").eq(0).text(newpneumoniadata.data.conf.component[0].summaryDataIn.confirmed);
 				$(".statistics>li>strong").eq(1).text(newpneumoniadata.data.conf.component[0].summaryDataIn.unconfirmed);
 				$(".statistics>li>strong").eq(2).text(newpneumoniadata.data.conf.component[0].summaryDataIn.died);
 				$(".statistics>li>strong").eq(3).text(newpneumoniadata.data.conf.component[0].summaryDataIn.cured);
+				console.log(newpneumoniadata.data.conf.component[0].summaryDataIn);
 			})
 		}
 
