@@ -18,6 +18,8 @@
 
 新浪新闻 提供实时全国数据 https://news.sina.cn/zt_d/yiqing0121
 
+北京日报 提供实时全国数据 https://bjrbh5.bjd.com.cn/web/page
+
 ### 工具
 
 2019-nCoV 新型肺炎确诊患者相同行程查询工具 1.2 http://2019ncov.nosugartech.com/
