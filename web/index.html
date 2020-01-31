@@ -27,13 +27,42 @@
 		}
 
 		#main {
+			margin-top: 20px;
 			width: 100%;
-			height: calc(100% - 30px);
+			height: calc(100% - 160px);
+		}
+
+		.statistics {
+			display: flex;
+			margin: 10px;
+			padding: 0;
+		}
+
+		.statistics li {
+			display: flex;
+			flex: 1 1;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.datatitle {
+			font-size: 20px;
+			padding: 5px 50px;
+			text-align: center;
 		}
 	</style>
 </head>
 
 <body>
+	<div class="datatitle">截至 2020-01-31 08:09 全国数据统计</div>
+	<ul class="statistics">
+		<li><strong style="color: rgb(247, 76, 49);">9720</strong><span>确诊病例</span></li>
+		<li><strong style="color: rgb(247, 130, 7);">15238</strong><span>疑似病例</span></li>
+		<li><strong style="color: rgb(93, 112, 146);">213</strong><span>死亡人数</span></li>
+		<li><strong style="color: rgb(40, 183, 163);">171</strong><span>治愈人数</span></li>
+	</ul>
+
 	<div id="main"></div>
 	<div id="dataFrom">(数据来源：<a href="http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml"
 			target="_blank">中华人民共和国国家卫生健康委员会</a>)</div>
@@ -50,9 +79,12 @@
 			title: {
 				text: '全国新型肺炎疫情每日动态',
 				x: 'center',
+				y: 'top',
+			},
+			legend: {
+				x: 'center',
 				y: 'bottom',
 			},
-			legend: {},
 			tooltip: {},
 			dataset: {
 				dimensions: ['日期', '确诊', '疑似', '重症', '死亡', '治愈', '确认+疑似', '新增(疑似+确认)', '观察中'],
@@ -97,6 +129,20 @@
 		};
 		myChart.setOption(option);
 		window.onresize = () => this.myChart.resize();
+
+		update();
+		window.setInterval(() => update, 1000 * 60 * 5);
+
+		function update() {
+			$.getJSON("https://service-nxxl1y2s-1252957949.gz.apigw.tencentcs.com/release/newpneumonia/" + Date.parse(new Date()), function (newpneumoniadata) {
+				$(".datatitle").text("截至 " + newpneumoniadata.data.conf.component[0].mapLastUpdatedTime + " 全国数据统计");
+				$(".statistics>li>strong").eq(0).text(newpneumoniadata.data.conf.component[0].summaryDataIn.confirmed);
+				$(".statistics>li>strong").eq(1).text(newpneumoniadata.data.conf.component[0].summaryDataIn.unconfirmed);
+				$(".statistics>li>strong").eq(2).text(newpneumoniadata.data.conf.component[0].summaryDataIn.died);
+				$(".statistics>li>strong").eq(3).text(newpneumoniadata.data.conf.component[0].summaryDataIn.cured);
+			})
+		}
+
 	</script>
 </body>
 
