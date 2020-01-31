@@ -27,14 +27,24 @@
 		}
 
 		#main {
-			margin-top: 20px;
+			margin-top: -20px;
 			width: 100%;
-			height: calc(100% - 160px);
+			height: calc(100% - 130px);
+
+		}
+
+		#realTimeData {
+			border: 2px solid #eee;
+			border-radius: 10px;
+			margin: 10px;
+			background-color: #639a081f;
+			display: inline-block;
+			width: calc(100% - 26px);
 		}
 
 		.statistics {
 			display: flex;
-			margin: 10px;
+			margin: 5px;
 			padding: 0;
 		}
 
@@ -46,30 +56,39 @@
 			justify-content: center;
 		}
 
+		.statistics li span {
+			color: #666;
+			font-size: 12px;
+		}
+
 		.datatitle {
-			font-size: 20px;
-			padding: 5px 50px;
+			font-size: 18px;
+			font-weight: bold;
 			text-align: center;
+			color: #2d9fe2e8;
 		}
 
 		.datasubtitle {
 			font-size: 14px;
 			padding: 5px 50px;
 			text-align: center;
+			color: #999;
+		}
 		}
 	</style>
 </head>
 
 <body>
-	<div class="datatitle">全国疫情实时数据统计</div>
-	<div class="datasubtitle">(截至 2020-01-31 08:09)</div>
-	<ul class="statistics">
-		<li><strong style="color: rgb(247, 76, 49);">9720</strong><span>确诊病例</span></li>
-		<li><strong style="color: rgb(247, 130, 7);">15238</strong><span>疑似病例</span></li>
-		<li><strong style="color: rgb(93, 112, 146);">213</strong><span>死亡人数</span></li>
-		<li><strong style="color: rgb(40, 183, 163);">171</strong><span>治愈人数</span></li>
-	</ul>
-
+	<div id="realTimeData">
+		<div class="datatitle">全国疫情实时数据统计</div>
+		<div class="datasubtitle">(截至 2020-01-31 08:09)</div>
+		<ul class="statistics">
+			<li><strong style="color: rgb(247, 76, 49);">9720</strong><span>确诊病例</span></li>
+			<li><strong style="color: rgb(247, 130, 7);">15238</strong><span>疑似病例</span></li>
+			<li><strong style="color: rgb(93, 112, 146);">213</strong><span>死亡人数</span></li>
+			<li><strong style="color: rgb(40, 183, 163);">171</strong><span>治愈人数</span></li>
+		</ul>
+	</div>
 	<div id="main"></div>
 	<div id="dataFrom">(数据来源：<a href="http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml"
 			target="_blank">中华人民共和国国家卫生健康委员会</a>)</div>
@@ -84,13 +103,15 @@
 
 		option = {
 			title: {
-				text: '全国新型肺炎每日疫情趋势',
+				text: '全国新型肺炎疫情趋势',
 				x: 'center',
 				y: 'top',
+				top: '20px'
 			},
 			legend: {
 				x: 'center',
 				y: 'bottom',
+				itemGap: 3
 			},
 			tooltip: {},
 			dataset: {
