@@ -21,9 +21,18 @@
 		}
 
 		#dataFrom {
-			font-size: 14px;
+			font-size: 12px;
 			text-align: right;
 			margin-right: 40px;
+			color: #999;
+		}
+
+		#dataFrom a,
+		#dataFrom a:active,
+		#dataFrom a:hover {
+			font-size: 12px;
+			color: #999;
+			text-decoration: none;
 		}
 
 		#main {
@@ -74,7 +83,6 @@
 			text-align: center;
 			color: #999;
 		}
-		}
 	</style>
 </head>
 
@@ -90,8 +98,7 @@
 		</ul>
 	</div>
 	<div id="main"></div>
-	<div id="dataFrom">(数据来源：<a href="http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml"
-			target="_blank">中华人民共和国国家卫生健康委员会</a>)</div>
+	<div id="dataFrom">(数据来源：<a href="http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml" target="_blank">国家卫健委</a>)</div>
 	<script type="text/javascript">
 		var myChart = echarts.init(document.getElementById('main'));
 		var dataSource = [];
