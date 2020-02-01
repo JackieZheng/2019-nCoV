@@ -85,6 +85,18 @@
 			text-align: center;
 			color: #999;
 		}
+
+		.statistics li strong {
+			font-size: 24px;
+		}
+
+		.statistics li strong::after {
+			content: attr(dataContent);
+			color: #3186cf6b;
+			font-size: 12px;
+			position: absolute;
+			margin: -5px 5px;
+		}
 	</style>
 </head>
 
@@ -93,10 +105,22 @@
 		<div class="datatitle">全国疫情实时数据统计</div>
 		<div class="datasubtitle">(截至 2020-01-31 08:09)</div>
 		<ul class="statistics">
-			<li><strong style="color: rgb(247, 76, 49);">9720</strong><span>确诊病例</span></li>
-			<li><strong style="color: rgb(247, 130, 7);">15238</strong><span>疑似病例</span></li>
-			<li><strong style="color: rgb(93, 112, 146);">213</strong><span>死亡人数</span></li>
-			<li><strong style="color: rgb(40, 183, 163);">171</strong><span>治愈人数</span></li>
+			<li>
+				<strong style="color: rgb(247, 76, 49);" dataContent="+0">0</strong>
+				<span>确诊病例</span>
+			</li>
+			<li>
+				<strong style="color: rgb(247, 130, 7);" dataContent="+0">0</strong>
+				<span>疑似病例</span>
+			</li>
+			<li>
+				<strong style="color: rgb(93, 112, 146);" dataContent="+0">0</strong>
+				<span>死亡人数</span>
+			</li>
+			<li>
+				<strong style="color: rgb(40, 183, 163);" dataContent="+0">0</strong>
+				<span>治愈人数</span>
+			</li>
 		</ul>
 	</div>
 	<div id="main"></div>
@@ -180,20 +204,24 @@
 
 				var summaryDataIn = newpneumoniadata.data.conf.component[0].summaryDataIn;
 
-				$(".statistics>li>strong").eq(0)
-					.prop('number', $(".statistics>li>strong").eq(0).text())
-					.animateNumber({ number: summaryDataIn.confirmed }, 5000);
-				$(".statistics>li>strong").eq(1)
-					.prop('number', $(".statistics>li>strong").eq(1).text())
-					.animateNumber({ number: summaryDataIn.unconfirmed }, 5000);
-				$(".statistics>li>strong").eq(2)
-					.prop('number', $(".statistics>li>strong").eq(2).text())
-					.animateNumber({ number: summaryDataIn.died }, 5000);
-				$(".statistics>li>strong").eq(3)
-					.prop('number', $(".statistics>li>strong").eq(3).text())
-					.animateNumber({ number: summaryDataIn.cured }, 5000);
+				freshDataNum($(".statistics>li>strong").eq(0), summaryDataIn.confirmed);
+				freshDataNum($(".statistics>li>strong").eq(1), summaryDataIn.unconfirmed);
+				freshDataNum($(".statistics>li>strong").eq(2), summaryDataIn.died);
+				freshDataNum($(".statistics>li>strong").eq(3), summaryDataIn.cured);
+
 				console.log(summaryDataIn);
 			})
+		}
+
+		function freshDataNum(target, newNum) {
+			var oldNum = target.text();
+			target
+				.prop('number', oldNum)
+				.animateNumber({ number: newNum }, 5000);
+			if (oldNum != 0) {
+				target
+					.attr('dataContent', '+' + (newNum - oldNum));
+			}
 		}
 
 	</script>
