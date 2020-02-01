@@ -11,6 +11,8 @@
 	<title>全国新型肺炎疫情每日动态</title>
 	<script src="https://cdn.bootcss.com/echarts/4.4.0-rc.1/echarts.min.js"></script>
 	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery-color/2.1.2/jquery.color.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
 	<style>
 		html,
 		body {
@@ -175,11 +177,22 @@
 		function update() {
 			$.getJSON("https://service-nxxl1y2s-1252957949.gz.apigw.tencentcs.com/release/newpneumonia/" + Date.parse(new Date()), function (newpneumoniadata) {
 				$(".datasubtitle").text("(截至 " + newpneumoniadata.data.conf.component[0].mapLastUpdatedTime + ")");
-				$(".statistics>li>strong").eq(0).text(newpneumoniadata.data.conf.component[0].summaryDataIn.confirmed);
-				$(".statistics>li>strong").eq(1).text(newpneumoniadata.data.conf.component[0].summaryDataIn.unconfirmed);
-				$(".statistics>li>strong").eq(2).text(newpneumoniadata.data.conf.component[0].summaryDataIn.died);
-				$(".statistics>li>strong").eq(3).text(newpneumoniadata.data.conf.component[0].summaryDataIn.cured);
-				console.log(newpneumoniadata.data.conf.component[0].summaryDataIn);
+
+				var summaryDataIn = newpneumoniadata.data.conf.component[0].summaryDataIn;
+
+				$(".statistics>li>strong").eq(0)
+					.prop('number', $(".statistics>li>strong").eq(0).text())
+					.animateNumber({ number: summaryDataIn.confirmed }, 5000);
+				$(".statistics>li>strong").eq(1)
+					.prop('number', $(".statistics>li>strong").eq(1).text())
+					.animateNumber({ number: summaryDataIn.unconfirmed }, 5000);
+				$(".statistics>li>strong").eq(2)
+					.prop('number', $(".statistics>li>strong").eq(2).text())
+					.animateNumber({ number: summaryDataIn.died }, 5000);
+				$(".statistics>li>strong").eq(3)
+					.prop('number', $(".statistics>li>strong").eq(3).text())
+					.animateNumber({ number: summaryDataIn.cured }, 5000);
+				console.log(summaryDataIn);
 			})
 		}
 
