@@ -9,14 +9,15 @@
 	<meta name="Keywords" content="2019-nCoV,肺炎,疫情,中华菊头蝠,冠状病毒,感染">
 	<meta name="Description" content="2019-nCoV全国新型肺炎疫情趋势">
 	<title>全国新型肺炎疫情每日动态</title>
+
+	<link href="../css/tooltipster.min.css" rel="stylesheet">
+	<link href="../css/themes/tooltipster-shadow.min.css" rel="stylesheet">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/echarts.min.js"></script>
 	<script src="../Js/Date.prototype.js"></script>
-	<link href="https://cdn.bootcss.com/tooltipster/3.3.0/css/tooltipster.min.css" rel="stylesheet">
-	<link href="https://cdn.bootcss.com/tooltipster/3.3.0/css/themes/tooltipster-shadow.min.css" rel="stylesheet">
-	<script src="https://cdn.bootcss.com/echarts/4.4.0-rc.1/echarts.min.js"></script>
-	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdn.bootcss.com/jquery-color/2.1.2/jquery.color.min.js"></script>
-	<script src="https://cdn.bootcss.com/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
-	<script src="https://cdn.bootcss.com/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+	<script src="../js/jquery.color.min.js"></script>
+	<script src="../js/jquery.animateNumber.min.js"></script>
+	<script src="../js/jquery.tooltipster.min.js"></script>
 	<style>
 		html,
 		body {
@@ -139,19 +140,19 @@
 		<div class="datasubtitle tooltip" title="数据每5分钟自动刷新一次，如有更新会在数字右上角提示。数字右下角为相对昨天数据变化。">(截至 2020-01-31 08:09)</div>
 		<ul class="statistics">
 			<li>
-				<strong style="color: rgb(247, 76, 49);" dataContent="0">0</strong>
+				<strong style="color: rgb(247, 76, 49);" dataContent="">0</strong>
 				<span dataContent="0">确诊病例</span>
 			</li>
 			<li>
-				<strong style="color: rgb(247, 130, 7);" dataContent="0">0</strong>
+				<strong style="color: rgb(247, 130, 7);" dataContent="">0</strong>
 				<span dataContent="0">疑似病例</span>
 			</li>
 			<li>
-				<strong style="color: rgb(93, 112, 146);" dataContent="0">0</strong>
+				<strong style="color: rgb(93, 112, 146);" dataContent="">0</strong>
 				<span dataContent="0">死亡人数</span>
 			</li>
 			<li>
-				<strong style="color: rgb(40, 183, 163);" dataContent="0">0</strong>
+				<strong style="color: rgb(40, 183, 163);" dataContent="">0</strong>
 				<span dataContent="0">治愈人数</span>
 			</li>
 		</ul>
@@ -283,12 +284,10 @@
 			var increaseNum = ~~(target.attr('dataContent'));
 
 			if (oldNum != 0 && (newNum - oldNum) != 0) {
-				target
-					.attr('dataContent', '+' + (increaseNum + (newNum - oldNum)));
+				target.attr('dataContent', '+' + (increaseNum + (newNum - oldNum)));
 			}
 			else {
-				target
-					.attr('dataContent', '');
+				//target.attr('dataContent', '');
 			}
 
 			target
