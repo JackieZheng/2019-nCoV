@@ -167,12 +167,18 @@
 				freshDataNum($(".statistics>li>strong").eq(1), summaryDataIn.unconfirmed);
 				freshDataNum($(".statistics>li>strong").eq(2), summaryDataIn.died);
 				freshDataNum($(".statistics>li>strong").eq(3), summaryDataIn.cured);
-
-				$(".statistics>li>span").eq(0).attr('dataContent', '+' + (summaryDataIn.confirmed - yesterday_confirmed));
-				$(".statistics>li>span").eq(1).attr('dataContent', '+' + (summaryDataIn.unconfirmed - yesterday_unconfirmed));
-				$(".statistics>li>span").eq(2).attr('dataContent', '+' + (summaryDataIn.died - yesterday_died));
-				$(".statistics>li>span").eq(3).attr('dataContent', '+' + (summaryDataIn.cured - yesterday_cured));
-
+				if (yesterday_confirmed > 0) {
+					$(".statistics>li>span").eq(0).attr('dataContent', '+' + (summaryDataIn.confirmed - yesterday_confirmed));
+				}
+				if (yesterday_unconfirmed > 0) {
+					$(".statistics>li>span").eq(1).attr('dataContent', '+' + (summaryDataIn.unconfirmed - yesterday_unconfirmed));
+				}
+				if (yesterday_died > 0) {
+					$(".statistics>li>span").eq(2).attr('dataContent', '+' + (summaryDataIn.died - yesterday_died));
+				}
+				if (yesterday_cured > 0) {
+					$(".statistics>li>span").eq(3).attr('dataContent', '+' + (summaryDataIn.cured - yesterday_cured));
+				}
 				console.log(summaryDataIn);
 			})
 		}
