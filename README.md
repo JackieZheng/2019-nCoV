@@ -22,7 +22,7 @@
 
 ### 工具
 
-2019-nCoV 新型肺炎确诊患者相同行程查询工具 1.2 [http://2019ncov.nosugartech.com/](http://2019ncov.nosugartech.com/)
+2019-nCoV 新型肺炎确诊患者相同行程查询工具 1.2 [http://2019ncov.nosugartech.com/](http://2019ncov.nosugartech.com)
 
 新型冠状病毒感染的肺炎确诊患者同行程查询工具（人民网） v1.3 [https://h5.peopleapp.com/txcx/index.html](https://h5.peopleapp.com/txcx/index.html)
 
