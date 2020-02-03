@@ -4,7 +4,7 @@
 
 数据来源：中华人民共和国国家卫生健康委员会 http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml
 
-[![点击查看图表](https://github.com/JackieZheng/2019-nCoV/blob/master/Image/20200202.png)](https://jackiezheng.github.io/2019-nCoV/web/index.html)
+[![点击查看图表](Image/20200203.png)](https://jackiezheng.github.io/2019-nCoV/web/index.html)
 
 图表：https://jackiezheng.github.io/2019-nCoV/web
 
@@ -34,12 +34,12 @@
 
 转扩！上班族返岗后如何防护？这份建议很重要！ https://mp.weixin.qq.com/s/N5DmjCyAh5_f9m4zowV8nw
 
-![抗击疫情我们一定能赢](https://github.com/JackieZheng/2019-nCoV/blob/master/Image/1.png)
+![抗击疫情我们一定能赢](Image/1.png)
 
-![除了战胜它我们别无选择](https://github.com/JackieZheng/2019-nCoV/blob/master/Image/2.png)
+![除了战胜它我们别无选择](Image/2.png)
 
 # 各地及企业延迟复工：
 
-[![互联网公司春节后上班时间](https://github.com/JackieZheng/2019-nCoV/blob/master/Image/fg.jpg)](https://opn.baidu.com/map/cllanding/445a861ba7a069abc687c0cf9ec2e05a)
+[![互联网公司春节后上班时间](Image/fg.jpg)](https://opn.baidu.com/map/cllanding/445a861ba7a069abc687c0cf9ec2e05a)
 
-[![互联网公司春节后上班时间](https://github.com/JackieZheng/2019-nCoV/blob/master/Image/aa0d937dly1gbcnfqzavgj20vy3shkjl.png)](https://s.weibo.com/weibo?q=%23%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AC%E5%8F%B8%E6%98%A5%E8%8A%82%E5%90%8E%E4%B8%8A%E7%8F%AD%E6%97%B6%E9%97%B4%23)
+[![互联网公司春节后上班时间](Image/aa0d937dly1gbcnfqzavgj20vy3shkjl.png)](https://s.weibo.com/weibo?q=%23%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AC%E5%8F%B8%E6%98%A5%E8%8A%82%E5%90%8E%E4%B8%8A%E7%8F%AD%E6%97%B6%E9%97%B4%23)
