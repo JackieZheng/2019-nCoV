@@ -6,7 +6,7 @@
 
 [![点击查看图表](Image/20200203.png)](https://jackiezheng.github.io/2019-nCoV/web/index.html)
 
-图表：https://jackiezheng.github.io/2019-nCoV/web
+查看图表：[https://jackiezheng.github.io/2019-nCoV/web](https://jackiezheng.github.io/2019-nCoV/web)
 
 # 相关链接：
 
