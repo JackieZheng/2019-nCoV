@@ -62,20 +62,7 @@
 
 		var myChart = echarts.init(document.getElementById('main'));
 		var dataSource = [];
-
-		$.ajaxSettings.async = false;
-		$.getJSON("../Json/data.json?" + Date.parse(new Date()), function (data) {
-			dataSource = data;
-			var yesterday_data = data.filter(item => (new Date(item.日期)).Format("yyyy/M/d") == (new Date()).DateAdd("d", -1).Format("yyyy/M/d"));
-			console.log(yesterday_data);
-			if (yesterday_data.length > 0) {
-				yesterday_confirmed = ~~yesterday_data[0].确诊;
-				yesterday_unconfirmed = ~~yesterday_data[0].疑似;
-				yesterday_died = ~~yesterday_data[0].死亡;
-				yesterday_cured = ~~yesterday_data[0].治愈;
-			}
-		})
-
+		var dimensions = ['日期', '确诊', '疑似', '重症', '死亡', '治愈', '确认+疑似', '新增(疑似+确认)', '观察中'];
 		option = {
 			title: {
 				text: '全国新型肺炎疫情趋势',
@@ -86,14 +73,15 @@
 			legend: {
 				x: 'center',
 				y: 'bottom',
-				itemGap: 3
+				itemGap: 3,
+				selected: {}
 			},
 			grid: {
 				left: "15%"
 			},
 			tooltip: {},
 			dataset: {
-				dimensions: ['日期', '确诊', '疑似', '重症', '死亡', '治愈', '确认+疑似', '新增(疑似+确认)', '观察中'],
+				dimensions: dimensions,
 				source: dataSource,
 			},
 			xAxis: { type: 'category' },
@@ -137,6 +125,40 @@
 				}
 			]
 		};
+
+		$.ajaxSettings.async = false;
+		$.getJSON("../Json/data.json?" + Date.parse(new Date()), function (data) {
+			dataSource = data;
+
+			// dataSource.forEach(function (item) {
+			// 	item["死亡/确诊"] = (item.死亡 / item.确诊).toFixed(3);
+			// 	item["治愈/确诊"] = (item.治愈 / item.确诊).toFixed(3);
+			// });
+			// option.dataset.dimensions.push("死亡/确诊");
+			// option.series.push({ type: 'line', label: { normal: { show: true, position: 'top' } } });
+
+			// option.dataset.dimensions.push("治愈/确诊");
+			// option.series.push({
+			// 	type: 'line',
+			// 	label: { normal: { show: true, position: 'top' } },
+			// 	itemStyle: { normal: { color: '#8cd5c2', lineStyle: { color: '#8cd5c2' } } },
+			// });
+
+			//option.legend.selected['观察中'] = false;
+
+			option.dataset.source = dataSource;
+
+			var yesterday_data = data.filter(item => (new Date(item.日期)).Format("yyyy/M/d") == (new Date()).DateAdd("d", -1).Format("yyyy/M/d"));
+			console.log(yesterday_data);
+			if (yesterday_data.length > 0) {
+				yesterday_confirmed = ~~yesterday_data[0].确诊;
+				yesterday_unconfirmed = ~~yesterday_data[0].疑似;
+				yesterday_died = ~~yesterday_data[0].死亡;
+				yesterday_cured = ~~yesterday_data[0].治愈;
+			}
+		})
+
+
 		myChart.setOption(option);
 		window.onresize = () => this.myChart.resize();
 
