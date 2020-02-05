@@ -202,16 +202,17 @@
 		var tipContent = "数据每5分钟自动刷新一次，如有更新会在数字右上角提示。"
 			+ "数字右下角为当前相对昨天24时总数的增加量。"
 			+ "(实时数据采集自网络，仅供参考！实际数据以官方为准！！)";
+		var tip_index = 0;
 		$(".datasubtitle").bind("mouseenter",
 			function () {
 				var that = this;
-				layer.tips(tipContent,
+				tip_index = layer.tips(tipContent,
 					that,
 					{
 						tips: [1, '#CDDC39'],
 						time: 5000
 					});
-			});
+			}).bind("mouseleave", () => layer.close(tip_index))
 
 
 	</script>
