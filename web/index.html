@@ -144,8 +144,7 @@
 			// 	itemStyle: { normal: { color: '#8cd5c2', lineStyle: { color: '#8cd5c2' } } },
 			// });
 
-			//option.legend.selected['观察中'] = false;
-
+			option.legend.selected['观察中'] = false;
 			option.dataset.source = dataSource;
 
 			var yesterday_data = data.filter(item => (new Date(item.日期)).Format("yyyy/M/d") == (new Date()).DateAdd("d", -1).Format("yyyy/M/d"));
