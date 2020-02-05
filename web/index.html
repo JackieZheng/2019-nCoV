@@ -204,11 +204,12 @@
 			+ "(实时数据采集自网络，仅供参考！实际数据以官方为准！！)";
 		$(".datasubtitle").bind("mouseenter",
 			function () {
+				var that = this;
 				layer.tips(tipContent,
-					$(".datasubtitle"),
+					that,
 					{
 						tips: [1, '#CDDC39'],
-						time: 3000
+						time: 0
 					});
 			});
 
