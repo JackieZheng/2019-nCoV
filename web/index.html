@@ -39,19 +39,19 @@
 		<ul class="statistics">
 			<li>
 				<strong style="color: rgb(247, 76, 49);" dataContent="">0</strong>
-				<span dataContent="">确诊病例</span>
+				<span dataContent="">确诊</span>
 			</li>
 			<li>
 				<strong style="color: rgb(247, 130, 7);" dataContent="">0</strong>
-				<span dataContent="">疑似病例</span>
+				<span dataContent="">疑似</span>
 			</li>
 			<li>
 				<strong style="color: rgb(93, 112, 146);" dataContent="">0</strong>
-				<span dataContent="">死亡人数</span>
+				<span dataContent="">死亡</span>
 			</li>
 			<li>
 				<strong style="color: rgb(40, 183, 163);" dataContent="">0</strong>
-				<span dataContent="">治愈人数</span>
+				<span dataContent="">治愈</span>
 			</li>
 		</ul>
 	</div>
@@ -90,7 +90,13 @@
 			xAxis: { type: 'category' },
 			yAxis: {},
 			dataZoom: [
-			],
+				{
+					type: 'inside',
+					throttle: '50',
+					minValueSpan: 5,
+					start: 50,
+					end: 100
+				}],
 			series: [
 				{ type: 'bar' },
 				{ type: 'bar' },
