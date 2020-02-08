@@ -13,6 +13,13 @@ body {
 	color: #999;
 }
 
+#dataFrom span {
+	margin: 0 5px;
+	text-align: center;
+	line-height: 12px;
+	vertical-align: middle;
+}
+
 #dataFrom a,
 #dataFrom a:active,
 #dataFrom a:hover {
