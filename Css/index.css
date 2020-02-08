@@ -7,16 +7,20 @@ body {
 }
 
 #dataFrom {
+	position: fixed;
+	right: 20px;
+	bottom: 5px;
 	font-size: 12px;
 	text-align: right;
-	margin-right: 40px;
+	/* margin-right: 40px; */
 	color: #999;
 }
 
 #dataFrom span {
+	display: inline-flex;
 	margin: 0 5px;
 	text-align: center;
-	line-height: 12px;
+	line-height: 10px;
 	vertical-align: middle;
 }
 
@@ -31,7 +35,7 @@ body {
 #main {
 	margin-top: -20px;
 	width: 100%;
-	height: calc(100% - 130px);
+	height: calc(100% - 135px);
 }
 
 #realTimeData {
