@@ -28,7 +28,7 @@
 
 患者同程查询（搜狗） [https://sa.sogou.com/new-weball/page/sgs/epidemic/yyxw](https://sa.sogou.com/new-weball/page/sgs/epidemic/yyxw)
 
-身边疫情分布查询 https://z.cbndata.com/2019-nCoV/
+身边疫情分布查询 [https://z.cbndata.com/2019-nCoV/](https://z.cbndata.com/2019-nCoV/)
 
 ### 资料
 
