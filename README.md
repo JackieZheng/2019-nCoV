@@ -2,11 +2,10 @@
 
 全国新型冠状病毒肺炎（NCP）疫情每日数据动态趋势
 
-新型冠状病毒肺炎（“Novel coronavirus pneumonia”，简称“NCP”），简称“新冠肺炎”，是指 2019 新型冠状病毒感染导致的肺炎。2019 年 12 月以来，湖北省武汉市部分医院陆续发现了多例有华南海鲜市场暴露史的不明原因肺炎病例，现已证实为 2019 新型冠状病毒感染引起的急性呼吸道传染病。
-
-数据来源：中华人民共和国国家卫生健康委员会 http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml
+新型冠状病毒肺炎（“Novel coronavirus pneumonia”，简称“NCP”），简称“新冠肺炎”，是指 2019 新型冠状病毒感染导致的肺炎。2019 年 12 月以来，湖北省武汉市部分医院陆续发现了多例有华南海鲜市场暴露史的不明原因肺炎病例，现已证实为 2019 新型冠状病毒感染引起的急性呼吸道传染病。[百度百科](https://baike.baidu.com/item/%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E8%82%BA%E7%82%8E/24282529)
 
 [![点击查看图表](Image/20200208.png)](https://jackiezheng.github.io/2019-nCoV/web/index.html)
+数据来源：中华人民共和国国家卫生健康委员会 http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml
 
 查看图表：[https://jackiezheng.github.io/2019-nCoV/web](https://jackiezheng.github.io/2019-nCoV/web)
 
