@@ -86,7 +86,8 @@
 
 		var myChart = echarts.init(document.getElementById('main'));
 		var dataSource = [];
-		var dimensions = ['日期', '确诊', '疑似', '重症', '死亡', '治愈', '确诊+疑似', '新增确诊', '新增疑似', '新增(疑似+确诊)', '观察中'];
+		var dimensions = ['日期', '确诊', '疑似', '重症', '死亡', '治愈',
+			'确诊+疑似', '新增确诊', '新增疑似', '新增(疑似+确诊)', '观察中', '死亡/确诊'];
 		option = {
 			title: {
 				text: '全国新型肺炎疫情趋势',
@@ -181,6 +182,27 @@
 							position: 'top',
 						}
 					}
+				},
+				{
+					type: 'line',
+					label: {
+						normal: {
+							show: true,
+							position: 'top',
+							formatter: function (params) {
+								str = params.data['死亡/确诊'] + '%'
+								return str;
+							}
+						}
+					},
+					tooltip: {
+						formatter: function (item) {
+							str = item.seriesName + "<br>"
+								+ item.marker + ' ' + item.data['日期'] + ' : ' + item.data['死亡/确诊'] + '%';
+							return str;
+						}
+
+					}
 				}
 			]
 		};
@@ -204,6 +226,7 @@
 			// });
 
 			option.legend.selected['观察中'] = false;
+			option.legend.selected['死亡/确诊'] = false;
 			option.dataset.source = dataSource;
 
 			var yesterday_data = data.filter(item => (new Date(item.日期)).Format("yyyy/M/d") == (new Date()).DateAdd("d", -1).Format("yyyy/M/d"));
