@@ -52,4 +52,4 @@
 
 # 全国各地开学时间一览表
 
-[![全国各地开学时间一览表](Image/xuexiao.jpg)](http://www.sohu.com/a/371620608_272415)
+[![全国各地开学时间一览表](Image/xuexiao.jpeg)](http://www.sohu.com/a/371620608_272415)
