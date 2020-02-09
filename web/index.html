@@ -86,7 +86,7 @@
 
 		var myChart = echarts.init(document.getElementById('main'));
 		var dataSource = [];
-		var dimensions = ['日期', '确诊', '疑似', '重症', '死亡', '治愈', '确认+疑似', '新增(疑似+确认)', '观察中'];
+		var dimensions = ['日期', '确诊', '疑似', '重症', '死亡', '治愈', '确诊+疑似', '新增确诊', '新增疑似', '新增(疑似+确诊)', '观察中'];
 		option = {
 			title: {
 				text: '全国新型肺炎疫情趋势',
@@ -131,6 +131,28 @@
 				{ type: 'bar' },
 				{ type: 'bar' },
 				{ type: 'bar' },
+				{
+					type: 'line',
+					label: {
+						normal: {
+							show: true,
+							position: 'top',
+						},
+
+
+					}
+				},
+				{
+					type: 'line',
+					label: {
+						normal: {
+							show: true,
+							position: 'top',
+						},
+
+
+					}
+				},
 				{
 					type: 'line',
 					label: {
