@@ -39,10 +39,10 @@ body {
 }
 
 #realTimeData {
-	border: 2px solid #eee;
+	border: 2px solid #eeeeee;
 	border-radius: 12px;
 	margin: 5px;
-	background-color: #639a081f;
+	background-color: #ecf3e1;
 	display: inline-block;
 	width: calc(100% - 14px);
 }
