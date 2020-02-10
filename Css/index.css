@@ -39,12 +39,12 @@ body {
 }
 
 #realTimeData {
-	border: 2px solid #eee;
+	border: 2px solid #eee;
 	border-radius: 12px;
-	margin: 10px;
+	margin: 5px;
 	background-color: #639a081f;
 	display: inline-block;
-	width: calc(100% - 26px);
+	width: calc(100% - 14px);
 }
 
 .statistics {
@@ -65,6 +65,7 @@ body {
 .statistics li span {
 	color: #666;
 	font-size: 12px;
+	transform: scale(0.9);
 }
 
 .datatitle {
@@ -120,7 +121,7 @@ body {
 	font-size: 12px;
 	transform: scale(0.8);
 	position: absolute;
-	margin: -5px 0px;
+	margin: -8px -5px;
 }
 
 .tooltipster-shadow {
