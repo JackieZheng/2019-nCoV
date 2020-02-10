@@ -38,6 +38,8 @@
 
 身边疫情分布查询 [https://z.cbndata.com/2019-nCoV/](https://z.cbndata.com/2019-nCoV/)
 
+周边疫情查询工具（腾讯）[https://ncov.html5.qq.com/communityRenmin](https://ncov.html5.qq.com/communityRenmin)
+
 ### 资料
 
 新型冠状病毒肺炎预防指南 [https://mp.weixin.qq.com/s/95O_QKp2oxY2bHqucFfolw](https://mp.weixin.qq.com/s/95O_QKp2oxY2bHqucFfolw)
