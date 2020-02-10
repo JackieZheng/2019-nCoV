@@ -86,8 +86,8 @@
 
 		var myChart = echarts.init(document.getElementById('main'));
 		var dataSource = [];
-		var dimensions = ['日期', '确诊', '疑似', '重症', '死亡', '治愈',
-			'确诊+疑似', '新增确诊', '新增疑似', '新增(疑似+确诊)', '观察中', '死亡/确诊'];
+		var dimensions = ['日期', '累计确诊', '现有确诊（含重症）', '现有疑似', '现有重症', '累计死亡', '累计治愈',
+			'累计确诊+现有疑似', '新增确诊', '新增疑似', '新增(疑似+确诊)', '观察中', '死亡/确诊'];
 		option = {
 			title: {
 				text: '全国新型肺炎疫情趋势',
@@ -127,6 +127,7 @@
 					end: 100
 				}],
 			series: [
+				{ type: 'bar' },
 				{ type: 'bar' },
 				{ type: 'bar' },
 				{ type: 'bar' },
@@ -232,10 +233,10 @@
 			var yesterday_data = data.filter(item => (new Date(item.日期)).Format("yyyy/M/d") == (new Date()).DateAdd("d", -1).Format("yyyy/M/d"));
 			console.log(yesterday_data);
 			if (yesterday_data.length > 0) {
-				yesterday_confirmed = ~~yesterday_data[0].确诊;
-				yesterday_unconfirmed = ~~yesterday_data[0].疑似;
-				yesterday_died = ~~yesterday_data[0].死亡;
-				yesterday_cured = ~~yesterday_data[0].治愈;
+				yesterday_confirmed = ~~yesterday_data[0].累计确诊;
+				yesterday_unconfirmed = ~~yesterday_data[0].现有疑似;
+				yesterday_died = ~~yesterday_data[0].累计死亡;
+				yesterday_cured = ~~yesterday_data[0].累计治愈;
 			}
 		})
 
