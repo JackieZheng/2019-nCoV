@@ -32,6 +32,8 @@
 
 北京日报 提供实时全国数据 [https://bjrbh5.bjd.com.cn/web/page](https://bjrbh5.bjd.com.cn/web/page)
 
+新华网新媒体 提供实时全国数据 [http://fms.news.cn/swf/2020_sjxw/2_1_xgyq/](http://fms.news.cn/swf/2020_sjxw/2_1_xgyq/)
+
 ### 工具
 
 2019-nCoV 新型肺炎确诊患者相同行程查询工具 1.2 [http://2019ncov.nosugartech.com/](http://2019ncov.nosugartech.com)
