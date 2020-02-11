@@ -6,7 +6,7 @@
 
 > 在 2020 年 2 月 8 日下午举行的新闻发布会上，国家卫健委新闻发言人表示，将新型冠状病毒感染的肺炎暂命名为新型冠状病毒肺炎，简称新冠肺炎，英文简称为 NCP。[[信息来自百度百科]](https://baike.baidu.com/item/%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E8%82%BA%E7%82%8E/24282529)
 
-[![点击查看图表](Image/20200210.png)](https://jackiezheng.github.io/2019-nCoV/web)
+[![点击查看图表](Image/20200211.png)](https://jackiezheng.github.io/2019-nCoV/web)
 
 数据来源：中华人民共和国国家卫生健康委员会 [http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml](http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml)
 
