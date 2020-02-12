@@ -2,7 +2,7 @@
 
 全国新型冠状病毒肺炎（NCP）疫情每日数据动态趋势
 
-> 新型冠状病毒肺炎（“Novel coronavirus pneumonia”，简称“NCP”），简称“新冠肺炎”，是指 2019 新型冠状病毒感染导致的肺炎。2019 年 12 月以来，湖北省武汉市部分医院陆续发现了多例有华南海鲜市场暴露史的不明原因肺炎病例，现已证实为 2019 新型冠状病毒感染引起的急性呼吸道传染病。
+> 新型冠状病毒肺炎（“Novel coronavirus pneumonia”，简称“NCP”），简称“新冠肺炎”，是指 2019 新型冠状病毒感染导致的肺炎。2019 年 12 月以来，湖北省武汉市部分医院陆续发现了多例有华南海鲜市场暴露史的不明原因肺炎病例，现已证实为 2019 新型冠状病毒感染引起的急性呼吸道传染病。[[信息来自百度百科]](https://baike.baidu.com/item/%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E8%82%BA%E7%82%8E/24282529)
 
 > 在 2020 年 2 月 8 日下午举行的新闻发布会上，国家卫健委新闻发言人表示，将新型冠状病毒感染的肺炎暂命名为新型冠状病毒肺炎，简称新冠肺炎，英文简称为 NCP。[[信息来自百度百科]](https://baike.baidu.com/item/%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E8%82%BA%E7%82%8E/24282529)
 
@@ -23,6 +23,10 @@
 2020 援助武汉 [https://github.com/wuhan2020](https://github.com/wuhan2020)
 
 抗疫防疫项目大汇总 [https://gitee.com/dcloud/xinguan2020](https://gitee.com/dcloud/xinguan2020)
+
+(Github)全国新型冠状肺炎疫情每日数据动态[https://github.com/JackieZheng/2019-nCoV](https://github.com/JackieZheng/2019-nCoV)
+
+(Gitee)全国新型冠状肺炎疫情每日数据动态[https://gitee.com/JackieZheng/GitHub-2019-nCoV](https://gitee.com/JackieZheng/GitHub-2019-nCoV)
 
 ### 数据
 
