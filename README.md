@@ -56,6 +56,12 @@
 
 ![除了战胜它我们别无选择](Image/2.png)
 
+### 学习资源
+
+电子课本：部编语文、人教版、苏教版、北师大版、沪教版语数英教材下册及预习资料
+
+[https://mp.weixin.qq.com/s/3NHnm1vnzyJ5nibKQVjejQ](https://mp.weixin.qq.com/s/3NHnm1vnzyJ5nibKQVjejQ)
+
 # 各地及企业延迟复工：
 
 [最新消息！阿里宣布无限期延迟复工，字节跳动、腾讯......等企业也再次延迟！](https://mp.weixin.qq.com/s/f0aPm9pllw932CP4QED1zg)
