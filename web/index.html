@@ -82,7 +82,10 @@
 
 	</div>
 	<script type="text/javascript">
-		var yesterday_confirmed = 0, yesterday_unconfirmed = 0, yesterday_died = 0, yesterday_cured = 0
+		var yesterday_confirmed = 0, yesterday_unconfirmed = 0, yesterday_died = 0, yesterday_cured = 0;
+
+		//"https://service-nxxl1y2s-1252957949.gz.apigw.tencentcs.com/release/newpneumonia/"
+		var dataApi = 'https://service-0gg71fu4-1252957949.gz.apigw.tencentcs.com/release/dingxiangyuan';
 
 		var myChart = echarts.init(document.getElementById('main'));
 		var dataSource = [];
@@ -261,26 +264,56 @@
 		window.setInterval(() => update(), 1000 * 60 * 5);
 
 		function update() {
-			$.getJSON("https://service-nxxl1y2s-1252957949.gz.apigw.tencentcs.com/release/newpneumonia/" + Date.parse(new Date()), function (newpneumoniadata) {
+			$.getJSON(dataApi + "?" + Date.parse(new Date()), function (newpneumoniadata) {
+				/*
 				$(".datasubtitle").text("(截至 " + newpneumoniadata.data.conf.component[0].mapLastUpdatedTime + ")");
 
 				var summaryDataIn = newpneumoniadata.data.conf.component[0].summaryDataIn;
-
 				freshDataNum($(".statistics>li>strong").eq(0), summaryDataIn.confirmed);
 				freshDataNum($(".statistics>li>strong").eq(1), summaryDataIn.unconfirmed);
 				freshDataNum($(".statistics>li>strong").eq(2), summaryDataIn.died);
 				freshDataNum($(".statistics>li>strong").eq(3), summaryDataIn.cured);
+				*/
+
+				var summaryDataIn = newpneumoniadata.data.getStatisticsService;
+				$(".datasubtitle").text("(截至 "
+					+ new Date(newpneumoniadata.data.getStatisticsService.modifyTime).Format("yyyy-MM-dd hh:mm:ss") + ")");
+
+				/*现有确诊*/
+				let currentConfirmedCount = summaryDataIn.currentConfirmedCount;
+
+				/*累计确诊*/
+				let confirmedCount = summaryDataIn.confirmedCount;
+
+				/*现有疑似*/
+				let suspectedCount = summaryDataIn.suspectedCount;
+
+				/*累计死亡*/
+				let deadCount = summaryDataIn.deadCount;
+
+				/*累计治愈*/
+				let curedCount = summaryDataIn.curedCount;
+
+				/*现有重症*/
+				let seriousCount = summaryDataIn.seriousCount;
+
+				freshDataNum($(".statistics>li>strong").eq(0), confirmedCount);
+				freshDataNum($(".statistics>li>strong").eq(1), suspectedCount);
+				freshDataNum($(".statistics>li>strong").eq(2), deadCount);
+				freshDataNum($(".statistics>li>strong").eq(3), curedCount);
+
+
 				if (yesterday_confirmed > 0) {
-					$(".statistics>li>span").eq(0).attr('dataContent', '+' + (summaryDataIn.confirmed - yesterday_confirmed));
+					$(".statistics>li>span").eq(0).attr('dataContent', '+' + (confirmedCount - yesterday_confirmed));
 				}
 				if (yesterday_unconfirmed > 0) {
-					$(".statistics>li>span").eq(1).attr('dataContent', '+' + (summaryDataIn.unconfirmed - yesterday_unconfirmed));
+					$(".statistics>li>span").eq(1).attr('dataContent', '+' + (suspectedCount - yesterday_unconfirmed));
 				}
 				if (yesterday_died > 0) {
-					$(".statistics>li>span").eq(2).attr('dataContent', '+' + (summaryDataIn.died - yesterday_died));
+					$(".statistics>li>span").eq(2).attr('dataContent', '+' + (deadCount - yesterday_died));
 				}
 				if (yesterday_cured > 0) {
-					$(".statistics>li>span").eq(3).attr('dataContent', '+' + (summaryDataIn.cured - yesterday_cured));
+					$(".statistics>li>span").eq(3).attr('dataContent', '+' + (curedCount - yesterday_cured));
 				}
 				console.log(summaryDataIn);
 			})
@@ -322,11 +355,11 @@
 	</script>
 	<script>
 		var _hmt = _hmt || [];
-		(function() {
-		  var hm = document.createElement("script");
-		  hm.src = "https://hm.baidu.com/hm.js?cdcc4d7a702f0597c5bfc96ec9508cbf";
-		  var s = document.getElementsByTagName("script")[0]; 
-		  s.parentNode.insertBefore(hm, s);
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?cdcc4d7a702f0597c5bfc96ec9508cbf";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
 		})();
 	</script>
 </body>
