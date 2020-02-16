@@ -303,16 +303,16 @@
 				freshDataNum($(".statistics>li>strong").eq(3), curedCount);
 
 
-				if (confirmedCount > yesterday_confirmed) {
+				if (confirmedCount > 0 && yesterday_confirmed > 0) {
 					$(".statistics>li>span").eq(0).attr('dataContent', '+' + (confirmedCount - yesterday_confirmed));
 				}
-				if (suspectedCount > yesterday_unconfirmed) {
+				if (suspectedCount > 0 && yesterday_unconfirmed > 0) {
 					$(".statistics>li>span").eq(1).attr('dataContent', '+' + (suspectedCount - yesterday_unconfirmed));
 				}
-				if (deadCount > yesterday_died) {
+				if (deadCount > 0 && yesterday_died > 0) {
 					$(".statistics>li>span").eq(2).attr('dataContent', '+' + (deadCount - yesterday_died));
 				}
-				if (curedCount > yesterday_cured) {
+				if (curedCount > 0 && yesterday_cured > 0) {
 					$(".statistics>li>span").eq(3).attr('dataContent', '+' + (curedCount - yesterday_cured));
 				}
 				console.log(summaryDataIn);
