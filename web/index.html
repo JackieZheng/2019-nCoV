@@ -86,6 +86,7 @@
 
 		//"https://service-nxxl1y2s-1252957949.gz.apigw.tencentcs.com/release/newpneumonia/"
 		var dataApi = 'https://service-0gg71fu4-1252957949.gz.apigw.tencentcs.com/release/dingxiangyuan';
+		dataApi = 'https://yiqing.ahusmart.com/overall';
 
 		var myChart = echarts.init(document.getElementById('main'));
 		var dataSource = [];
@@ -261,7 +262,7 @@
 
 		});
 
-		window.setInterval(() => update(), 1000 * 60 * 5);
+		window.setInterval(() => update(), 1000 * 60 * 30);
 
 		function update() {
 			$.getJSON(dataApi + "?" + Date.parse(new Date()), function (newpneumoniadata) {
@@ -275,9 +276,9 @@
 				freshDataNum($(".statistics>li>strong").eq(3), summaryDataIn.cured);
 				*/
 
-				var summaryDataIn = newpneumoniadata.data.getStatisticsService;
+				var summaryDataIn = newpneumoniadata.result;
 				$(".datasubtitle").text("(截至 "
-					+ new Date(newpneumoniadata.data.getStatisticsService.modifyTime).Format("yyyy-MM-dd hh:mm:ss") + ")");
+					+ new Date(summaryDataIn.updateTime).Format("yyyy-MM-dd hh:mm:ss") + ")");
 
 				/*现有确诊*/
 				let currentConfirmedCount = summaryDataIn.currentConfirmedCount;
