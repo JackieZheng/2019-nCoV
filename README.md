@@ -28,6 +28,8 @@
 
 (Gitee)全国新型冠状肺炎疫情每日数据动态[https://gitee.com/JackieZheng/GitHub-2019-nCoV](https://gitee.com/JackieZheng/GitHub-2019-nCoV)
 
+全国及各省新型肺炎疫情情况图(数据持续更新并开放接口) [https://github.com/hack-fang/nCov](https://github.com/hack-fang/nCov)
+
 ### 数据
 
 丁香园·丁香医生 提供实时全国数据 [https://3g.dxy.cn/newh5/view/pneumonia](https://3g.dxy.cn/newh5/view/pneumonia)
@@ -63,6 +65,8 @@
 ![除了战胜它我们别无选择](Image/2.png)
 
 ### 学习资源
+
+国家中小学网络云平台[http://ykt.eduyun.cn/](http://ykt.eduyun.cn/)
 
 电子课本：部编语文、人教版、苏教版、北师大版、沪教版语数英教材下册及预习资料
 
