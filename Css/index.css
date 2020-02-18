@@ -48,7 +48,7 @@ body {
 }
 
 .statistics {
-	display: flex;
+	display: block;
 	margin: 5px auto;
 	padding: 0;
 	max-width: 600px;
@@ -60,6 +60,9 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 16.6666%;
+	float: left;
+	margin: 5px auto;
 }
 
 .statistics li span {
@@ -126,4 +129,10 @@ body {
 
 .tooltipster-shadow {
 	opacity: 0.9;
+}
+
+@media all and (max-width: 600px) {
+	.statistics li {
+		width: 33.3333%;
+	}
 }
