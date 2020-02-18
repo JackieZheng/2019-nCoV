@@ -94,9 +94,8 @@
 		var yesterday_confirmed = 0, yesterday_died = 0, yesterday_cured = 0,
 			yesterday_current_unconfirmed = 0, yesterday_current_serious = 0, yesterday_current_confirmed = 0;
 
-
-		//"https://service-nxxl1y2s-1252957949.gz.apigw.tencentcs.com/release/newpneumonia/"
-		var dataApi = 'https://service-0gg71fu4-1252957949.gz.apigw.tencentcs.com/release/dingxiangyuan';
+		//3218435e78f4d1873ab412313d6d77c5
+		var dataApi = '';
 		dataApi = 'https://yiqing.ahusmart.com/overall';
 		dataApi = 'https://api.tianapi.com/txapi/ncov/index?key=9d2ed450b9692452c645db9bb9febd8b';
 
@@ -228,34 +227,22 @@
 		$.getJSON("../Json/data.json?" + Date.parse(new Date()), function (data) {
 			dataSource = data;
 
-			// dataSource.forEach(function (item) {
-			// 	item["死亡/确诊"] = (item.死亡 / item.确诊).toFixed(3);
-			// 	item["治愈/确诊"] = (item.治愈 / item.确诊).toFixed(3);
-			// });
-			// option.dataset.dimensions.push("死亡/确诊");
-			// option.series.push({ type: 'line', label: { normal: { show: true, position: 'top' } } });
-
-			// option.dataset.dimensions.push("治愈/确诊");
-			// option.series.push({
-			// 	type: 'line',
-			// 	label: { normal: { show: true, position: 'top' } },
-			// 	itemStyle: { normal: { color: '#8cd5c2', lineStyle: { color: '#8cd5c2' } } },
-			// });
-
 			option.legend.selected['观察中'] = false;
 			option.legend.selected['死亡/确诊'] = false;
 			option.dataset.source = dataSource;
 
-			var yesterday_data = data.filter(item => (new Date(item.日期)).Format("yyyy/M/d") == (new Date()).DateAdd("d", -1).Format("yyyy/M/d"));
+			var yesterday_data = data.filter(item =>
+				(new Date(item.日期)).Format("yyyy/M/d") == (new Date()).DateAdd("d", -1).Format("yyyy/M/d")
+			);
 			console.log(yesterday_data);
 			if (yesterday_data.length > 0) {
-				yesterday_confirmed = ~~yesterday_data[0].累计确诊;
-				yesterday_died = ~~yesterday_data[0].累计死亡;
-				yesterday_cured = ~~yesterday_data[0].累计治愈;
+				yesterday_confirmed = ~~yesterday_data[0]["累计确诊"];
+				yesterday_died = ~~yesterday_data[0]["累计死亡"];
+				yesterday_cured = ~~yesterday_data[0]["累计治愈"];
 
 				yesterday_current_confirmed = ~~yesterday_data[0]["现有确诊（含重症）"];
-				yesterday_current_serious = ~~yesterday_data[0].现有重症;
-				yesterday_current_unconfirmed = ~~yesterday_data[0].现有疑似;
+				yesterday_current_serious = ~~yesterday_data[0]["现有重症"];
+				yesterday_current_unconfirmed = ~~yesterday_data[0]["现有疑似"];
 
 			}
 		})
@@ -278,21 +265,13 @@
 
 		});
 
-		window.setInterval(() => update(), 1000 * 60 * 30);
+		window.setInterval(() => update(), 1000 * 60 * 10);
 
 		function update() {// + "?" + Date.parse(new Date())
 			$.getJSON(dataApi, function (newpneumoniadata) {
-				/*
-				$(".datasubtitle").text("(截至 " + newpneumoniadata.data.conf.component[0].mapLastUpdatedTime + ")");
-
-				var summaryDataIn = newpneumoniadata.data.conf.component[0].summaryDataIn;
-				freshDataNum($(".statistics>li>strong").eq(0), summaryDataIn.confirmed);
-				freshDataNum($(".statistics>li>strong").eq(1), summaryDataIn.unconfirmed);
-				freshDataNum($(".statistics>li>strong").eq(2), summaryDataIn.died);
-				freshDataNum($(".statistics>li>strong").eq(3), summaryDataIn.cured);
-				*/
 
 				var summaryDataIn = newpneumoniadata.newslist[0].desc;
+
 				$(".datasubtitle").text("(截至 "
 					+ new Date(summaryDataIn.modifyTime).Format("yyyy-MM-dd hh:mm:ss") + ")");
 
@@ -322,9 +301,9 @@
 				freshDataNum($(".statistics>li>strong").eq(1), seriousCount || yesterday_current_serious);
 				freshDataNum($(".statistics>li>strong").eq(2), suspectedCount || yesterday_current_unconfirmed);
 
-				freshDataNum($(".statistics>li>strong").eq(3), confirmedCount);
-				freshDataNum($(".statistics>li>strong").eq(4), deadCount);
-				freshDataNum($(".statistics>li>strong").eq(5), curedCount);
+				freshDataNum($(".statistics>li>strong").eq(3), confirmedCount || yesterday_confirmed);
+				freshDataNum($(".statistics>li>strong").eq(4), deadCount || yesterday_died);
+				freshDataNum($(".statistics>li>strong").eq(5), curedCount || yesterday_cured);
 
 
 				if (currentConfirmedCount > 0 && yesterday_current_confirmed > 0) {
@@ -381,7 +360,7 @@
 				.animateNumber({ number: newNum }, 3000);
 		}
 
-		var tipContent = "数据每5分钟自动刷新一次，如有更新会在数字右上角提示。"
+		var tipContent = "数据每10分钟自动刷新一次，如有更新会在数字右上角提示。"
 			+ "数字右下角为当前相对昨天24时总数的增加量。"
 			+ "(实时数据采集自网络，仅供参考！实际数据以官方为准！！)";
 		var tip_index = 0;
