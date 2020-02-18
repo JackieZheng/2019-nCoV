@@ -135,4 +135,7 @@ body {
 	.statistics li {
 		width: 33.3333%;
 	}
+	#main {
+		height: calc(100% - 190px);
+	}
 }
