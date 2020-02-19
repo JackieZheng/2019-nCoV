@@ -284,8 +284,6 @@
 				/*累计治愈*/
 				let curedCount = summaryDataIn.curedCount;
 
-
-
 				/*现有确诊*/
 				let currentConfirmedCount = summaryDataIn.currentConfirmedCount;
 
@@ -306,42 +304,14 @@
 				freshDataNum($(".statistics>li>strong").eq(5), curedCount || yesterday_cured);
 
 
-				if (currentConfirmedCount > 0 && yesterday_current_confirmed > 0) {
-					$(".statistics>li>span").eq(0).attr('dataContent',
-						(currentConfirmedCount >= yesterday_current_confirmed ? '+' : '')
-						+ (currentConfirmedCount - yesterday_current_confirmed)
-					);
-				}
-				if (seriousCount > 0 && yesterday_current_serious > 0) {
-					$(".statistics>li>span").eq(1).attr('dataContent',
-						(seriousCount >= yesterday_current_serious ? '+' : '')
-						+ (seriousCount - yesterday_current_serious)
-					);
-				}
-				if (suspectedCount > 0 && yesterday_current_unconfirmed > 0) {
-					$(".statistics>li>span").eq(2).attr('dataContent',
-						(suspectedCount >= yesterday_current_unconfirmed ? '+' : '')
-						+ (suspectedCount - yesterday_current_unconfirmed)
-					);
-				}
-				if (confirmedCount > 0 && yesterday_confirmed > 0) {
-					$(".statistics>li>span").eq(3).attr('dataContent',
-						(confirmedCount >= yesterday_confirmed ? '+' : '')
-						+ (confirmedCount - yesterday_confirmed)
-					);
-				}
-				if (deadCount > 0 && yesterday_died > 0) {
-					$(".statistics>li>span").eq(4).attr('dataContent',
-						(deadCount >= yesterday_died ? '+' : '')
-						+ (deadCount - yesterday_died)
-					);
-				}
-				if (curedCount > 0 && yesterday_cured > 0) {
-					$(".statistics>li>span").eq(5).attr('dataContent',
-						(curedCount >= yesterday_cured ? '+' : '')
-						+ (curedCount - yesterday_cured)
-					);
-				}
+				updateIncrease($(".statistics>li>span").eq(0), currentConfirmedCount, yesterday_current_confirmed);
+				updateIncrease($(".statistics>li>span").eq(1), seriousCount, yesterday_current_serious);
+				updateIncrease($(".statistics>li>span").eq(2), suspectedCount, yesterday_current_unconfirmed);
+
+				updateIncrease($(".statistics>li>span").eq(3), confirmedCount, yesterday_confirmed);
+				updateIncrease($(".statistics>li>span").eq(4), deadCount, yesterday_died);
+				updateIncrease($(".statistics>li>span").eq(5), curedCount, yesterday_cured);
+
 				console.log(summaryDataIn);
 			})
 		}
@@ -352,7 +322,10 @@
 			var increaseNum = ~~(target.attr('dataContent'));
 
 			if (oldNum != 0 && (newNum - oldNum) != 0) {
-				target.attr('dataContent', '+' + (increaseNum + (newNum - oldNum)));
+				target.attr('dataContent',
+					(increaseNum + (newNum - oldNum)) >= 0 ? '+' : ''
+						+ (increaseNum + (newNum - oldNum))
+				);
 			}
 			else {
 				//target.attr('dataContent', '');
@@ -361,6 +334,13 @@
 			target
 				.prop('number', oldNum)
 				.animateNumber({ number: newNum }, 3000);
+		}
+
+		function updateIncrease(target, newNum, oldNum) {
+			if (newNum > 0 && oldNum > 0) {
+				target.attr('dataContent', (newNum >= oldNum ? '+' : '') + (newNum - oldNum)
+				);
+			}
 		}
 
 		var tipContent = "数据每10分钟自动刷新一次，如有更新会在数字右上角提示。"
