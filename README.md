@@ -8,7 +8,7 @@
 
 > 【环球网快讯】全球研究与创新论坛 2 月 11 日在日内瓦开幕。世卫组织总干事谭德塞在记者会上宣布，将新型冠状病毒命名为“COVID-19”。[[环球网]](https://world.huanqiu.com/article/3wzeLjoJecj)
 
-[![点击查看图表](Image/20200218.png)](https://jackiezheng.github.io/2019-nCoV/web)
+[![点击查看图表](Image/20200219.png)](https://jackiezheng.github.io/2019-nCoV/web)
 
 数据来源：中华人民共和国国家卫生健康委员会 [http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml](http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml)
 
