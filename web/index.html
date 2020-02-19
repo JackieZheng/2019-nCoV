@@ -326,17 +326,20 @@
 				}
 				if (confirmedCount > 0 && yesterday_confirmed > 0) {
 					$(".statistics>li>span").eq(3).attr('dataContent',
-						'+' + (confirmedCount - yesterday_confirmed)
+						(confirmedCount >= yesterday_confirmed ? '+' : '')
+						+ (confirmedCount - yesterday_confirmed)
 					);
 				}
 				if (deadCount > 0 && yesterday_died > 0) {
 					$(".statistics>li>span").eq(4).attr('dataContent',
-						'+' + (deadCount - yesterday_died)
+						(deadCount >= yesterday_died ? '+' : '')
+						+ (deadCount - yesterday_died)
 					);
 				}
 				if (curedCount > 0 && yesterday_cured > 0) {
 					$(".statistics>li>span").eq(5).attr('dataContent',
-						'+' + (curedCount - yesterday_cured)
+						(curedCount >= yesterday_cured ? '+' : '')
+						+ (curedCount - yesterday_cured)
 					);
 				}
 				console.log(summaryDataIn);
