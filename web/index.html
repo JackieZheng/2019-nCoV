@@ -304,6 +304,7 @@
 				freshDataNum($(".statistics>li>strong").eq(4), deadCount || yesterday_died);
 				freshDataNum($(".statistics>li>strong").eq(5), curedCount || yesterday_cured);
 
+				freshbackgroud(currentConfirmedCount || yesterday_current_confirmed, confirmedCount || yesterday_confirmed);
 
 				updateIncrease($(".statistics>li>span").eq(0), currentConfirmedCount, yesterday_current_confirmed);
 				updateIncrease($(".statistics>li>span").eq(1), seriousCount, yesterday_current_serious);
@@ -344,6 +345,12 @@
 				target.attr('dataContent', (newNum >= oldNum ? '+' : '') + (newNum - oldNum)
 				);
 			}
+		}
+		/* 动态改变背景 */
+		function freshbackgroud(currentConfirmedCount, confirmedCount) {
+			let alpha = 1 - currentConfirmedCount / confirmedCount;
+			$('#realTimeData').css({ 'background-color': 'rgba(130, 210, 10, ' + 0 + ')' });
+			$('#realTimeData').animate({ backgroundColor: 'rgba(130, 210, 10, ' + alpha + ')' }, 3000)
 		}
 
 		var tipContent = "1、数据每10分钟自动刷新一次，如有更新会在数字右上角提示。<br>"

@@ -42,7 +42,7 @@ body {
 	border: 2px solid #eeeeee;
 	border-radius: 12px;
 	margin: 5px;
-	background-color: #ecf3e1;
+	background-color: rgba(130, 210, 10, 0);
 	display: inline-block;
 	width: calc(100% - 14px);
 }
