@@ -110,13 +110,14 @@ body {
 }
 
 .statistics li strong::after {
-	content: attr(dataContent);
-	color: #ffffff;
-	font-size: 12px;
-	transform: scale(0.8);
-	position: absolute;
-	margin: -10px -5px;
-	line-height: 12px;
+    content: attr(dataContent);
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 12px;
+    transform: scale(0.8);
+    position: absolute;
+    margin: -10px -5px;
+    line-height: 12px;
 }
 
 .popshow::after {
