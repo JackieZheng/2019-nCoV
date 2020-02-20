@@ -1,4 +1,12 @@
+
+
+
 # 2019-nCoV
+
+[![GitHub license](https://img.shields.io/github/license/JackieZheng/2019-nCoV)](https://github.com/JackieZheng/2019-nCoV/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/JackieZheng/2019-nCoV)](https://github.com/JackieZheng/2019-nCoV/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/JackieZheng/2019-nCoV)](https://github.com/JackieZheng/2019-nCoV/network)
+[![GitHub issues](https://img.shields.io/github/issues/JackieZheng/2019-nCoV)](https://github.com/JackieZheng/2019-nCoV/issues)
 
 全国新型冠状病毒肺炎（NCP）疫情每日数据动态趋势
 
