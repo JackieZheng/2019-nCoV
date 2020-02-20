@@ -30,6 +30,8 @@
 
 全国及各省新型肺炎疫情情况图(数据持续更新并开放接口) [https://github.com/hack-fang/nCov](https://github.com/hack-fang/nCov)
 
+ncov web [https://github.com/pzhaonet/ncov](https://github.com/pzhaonet/ncov)
+
 ### 数据
 
 丁香园·丁香医生 提供实时全国数据 [https://3g.dxy.cn/newh5/view/pneumonia](https://3g.dxy.cn/newh5/view/pneumonia)
