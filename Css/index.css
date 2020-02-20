@@ -111,11 +111,19 @@ body {
 
 .statistics li strong::after {
 	content: attr(dataContent);
-	color: #3186cf6b;
+	color: #ffffff;
 	font-size: 12px;
-	transform: scale(0.9);
+	transform: scale(0.8);
 	position: absolute;
-	margin: -5px 0px;
+	margin: -10px -5px;
+	line-height: 12px;
+}
+
+.popshow::after {
+	border: solid 1px #ff4200d6;
+	background: #f64e4edb;
+	border-radius: 25%;
+	padding: 1px;
 }
 
 .statistics li span::after {
