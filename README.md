@@ -15,6 +15,8 @@
 
 [![点击查看图表](Image/20200220.png)](https://jackiezheng.github.io/2019-nCoV/web)
 
+[![点击查看图表](Image/20200220202226.png)](https://jackiezheng.github.io/2019-nCoV/web)
+
 数据来源：中华人民共和国国家卫生健康委员会 [http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml](http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml)
 
 查看图表：[https://jackiezheng.github.io/2019-nCoV/web](https://jackiezheng.github.io/2019-nCoV/web)
