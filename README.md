@@ -1,6 +1,3 @@
-
-
-
 # 2019-nCoV
 
 [![GitHub license](https://img.shields.io/github/license/JackieZheng/2019-nCoV)](https://github.com/JackieZheng/2019-nCoV/blob/master/LICENSE)
@@ -69,6 +66,8 @@ ncov web [https://github.com/pzhaonet/ncov](https://github.com/pzhaonet/ncov)
 新型冠状病毒肺炎预防指南 [https://mp.weixin.qq.com/s/95O_QKp2oxY2bHqucFfolw](https://mp.weixin.qq.com/s/95O_QKp2oxY2bHqucFfolw)
 
 转扩！上班族返岗后如何防护？这份建议很重要！ [https://mp.weixin.qq.com/s/N5DmjCyAh5_f9m4zowV8nw](https://mp.weixin.qq.com/s/N5DmjCyAh5_f9m4zowV8nw)
+
+一图了解第六版诊疗方案要点 [https://mp.weixin.qq.com/s/qljsrxSjsj-Kl0sjV7Ay1Q](https://mp.weixin.qq.com/s/qljsrxSjsj-Kl0sjV7Ay1Q)
 
 ![抗击疫情我们一定能赢](Image/1.png)
 
