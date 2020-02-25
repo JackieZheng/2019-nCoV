@@ -17,7 +17,7 @@
 
 > 国家卫生健康委 2020-2-21 将“新型冠状病毒肺炎”英文名称修订为“COVID-19”，与世界卫生组织命名保持一致，中文名称保持不变。[[国家卫生健康委]](http://www.nhc.gov.cn/yzygj/s7653p/202002/33393aa53d984ccdb1053a52b6bef810.shtml)
 
-[![点击查看图表](Image/20200224.png)](https://jackiezheng.github.io/2019-nCoV/web)
+[![点击查看图表](Image/20200225.png)](https://jackiezheng.github.io/2019-nCoV/web)
 
 [![点击查看图表](Image/20200220202226.png)](https://jackiezheng.github.io/2019-nCoV/web)
 
@@ -25,7 +25,7 @@
 
 查看图表：[https://jackiezheng.github.io/2019-nCoV/web](https://jackiezheng.github.io/2019-nCoV/web)
 
-# 相关链接：
+## 相关链接
 
 ### 开源项目
 
@@ -89,7 +89,7 @@ ncov web [https://github.com/pzhaonet/ncov](https://github.com/pzhaonet/ncov)
 
 [https://mp.weixin.qq.com/s/3NHnm1vnzyJ5nibKQVjejQ](https://mp.weixin.qq.com/s/3NHnm1vnzyJ5nibKQVjejQ)
 
-# 各地及企业延迟复工：
+## 各地及企业延迟复工
 
 [延迟复工再升级！这些企业不得于 3 月 16 日前复工！](http://t.cn/A6h5fmJF)
 
@@ -99,6 +99,6 @@ ncov web [https://github.com/pzhaonet/ncov](https://github.com/pzhaonet/ncov)
 
 [![互联网公司春节后上班时间](https://ww1.sinaimg.cn/bmiddle/aa0d937dly1gbcnfqzavgj20vy3shkjl.jpg)](https://s.weibo.com/weibo?q=%23%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AC%E5%8F%B8%E6%98%A5%E8%8A%82%E5%90%8E%E4%B8%8A%E7%8F%AD%E6%97%B6%E9%97%B4%23)
 
-# 全国各地开学时间一览表
+## 全国各地开学时间一览表
 
 [![全国各地开学时间一览表](Image/xuexiao.jpeg)](https://baijiahao.baidu.com/s?id=1659137892911623930)
