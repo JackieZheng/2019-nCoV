@@ -79,6 +79,8 @@ ncov web [https://github.com/pzhaonet/ncov](https://github.com/pzhaonet/ncov)
 
 一图了解第六版诊疗方案要点 [https://mp.weixin.qq.com/s/qljsrxSjsj-Kl0sjV7Ay1Q](https://mp.weixin.qq.com/s/qljsrxSjsj-Kl0sjV7Ay1Q)
 
+消毒剂的正确使用指南  [https://mp.weixin.qq.com/s/AOoJZv56m1fXjiCZ3kOQlQ](https://mp.weixin.qq.com/s/AOoJZv56m1fXjiCZ3kOQlQ)
+
 ![抗击疫情我们一定能赢](Image/1.png)
 
 ![除了战胜它我们别无选择](Image/2.png)
