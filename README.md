@@ -71,6 +71,8 @@ ncov web [https://github.com/pzhaonet/ncov](https://github.com/pzhaonet/ncov)
 
 ### 资料
 
+《企事业单位复工复产疫情防控措施指南》 [https://mp.weixin.qq.com/s/RFETviol4fHyVEtjihHNiA](https://mp.weixin.qq.com/s/RFETviol4fHyVEtjihHNiA)
+
 新型冠状病毒肺炎预防指南 [https://mp.weixin.qq.com/s/95O_QKp2oxY2bHqucFfolw](https://mp.weixin.qq.com/s/95O_QKp2oxY2bHqucFfolw)
 
 转扩！上班族返岗后如何防护？这份建议很重要！ [https://mp.weixin.qq.com/s/N5DmjCyAh5_f9m4zowV8nw](https://mp.weixin.qq.com/s/N5DmjCyAh5_f9m4zowV8nw)
