@@ -35,7 +35,7 @@ body {
 #main {
 	margin-top: -20px;
 	width: 100%;
-	height: calc(100% - 135px);
+	height: calc(100% - 150px);
 }
 
 #realTimeData {

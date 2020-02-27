@@ -108,6 +108,8 @@
 		var yesterday_confirmed = 0, yesterday_died = 0, yesterday_cured = 0,
 			yesterday_current_unconfirmed = 0, yesterday_current_serious = 0, yesterday_current_confirmed = 0;
 
+		var progress = 0;
+
 		//3218435e78f4d1873ab412313d6d77c5
 		var dataApi = '';
 		dataApi = 'https://yiqing.ahusmart.com/overall';
@@ -362,7 +364,7 @@
 		}
 		/* 动态改变背景 及 进度*/
 		function freshbackgroud(currentConfirmedCount, confirmedCount) {
-			let progress = 1 - currentConfirmedCount / confirmedCount;
+			progress = 1 - currentConfirmedCount / confirmedCount;
 			$('#realTimeData').css({ 'background-color': 'rgba(130, 210, 10, ' + 0 + ')' });
 			$('#realTimeData').animate({ backgroundColor: 'rgba(130, 210, 10, ' + progress + ')' }, 3000);
 
@@ -385,9 +387,25 @@
 				tip_index = layer.tips(tipContent,
 					that,
 					{
-						tips: [1, '#CDDC39'],
+						tips: [1, 'rgba(10,140,15,0.9)'],
 						time: 0
 					});
+			}).bind("mouseleave", () => layer.close(tip_index))
+
+		var docTipContent = "任务进度："
+			+ (progress * 100).toFixed(2)
+			+ "%<br>革命尚未成功，同志仍需努力！";
+		$(".processDoc").bind("mouseenter",
+			function () {
+				var that = this;
+				if (progress < 1) {
+					tip_index = layer.tips(docTipContent,
+						that,
+						{
+							tips: [1, 'rgba(235,75,30,0.9)'],
+							time: 0
+						});
+				}
 			}).bind("mouseleave", () => layer.close(tip_index))
 
 
