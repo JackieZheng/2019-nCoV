@@ -17,7 +17,7 @@
 
 > 国家卫生健康委 2020-2-21 将“新型冠状病毒肺炎”英文名称修订为“COVID-19”，与世界卫生组织命名保持一致，中文名称保持不变。[[国家卫生健康委]](http://www.nhc.gov.cn/yzygj/s7653p/202002/33393aa53d984ccdb1053a52b6bef810.shtml)
 
-[![点击查看图表](Image/20200226.png)](https://jackiezheng.github.io/2019-nCoV/web)
+[![点击查看图表](Image/20200227.png)](https://jackiezheng.github.io/2019-nCoV/web)
 
 [![点击查看图表](Image/20200220202226.png)](https://jackiezheng.github.io/2019-nCoV/web)
 
@@ -79,7 +79,7 @@ ncov web [https://github.com/pzhaonet/ncov](https://github.com/pzhaonet/ncov)
 
 一图了解第六版诊疗方案要点 [https://mp.weixin.qq.com/s/qljsrxSjsj-Kl0sjV7Ay1Q](https://mp.weixin.qq.com/s/qljsrxSjsj-Kl0sjV7Ay1Q)
 
-消毒剂的正确使用指南  [https://mp.weixin.qq.com/s/AOoJZv56m1fXjiCZ3kOQlQ](https://mp.weixin.qq.com/s/AOoJZv56m1fXjiCZ3kOQlQ)
+消毒剂的正确使用指南 [https://mp.weixin.qq.com/s/AOoJZv56m1fXjiCZ3kOQlQ](https://mp.weixin.qq.com/s/AOoJZv56m1fXjiCZ3kOQlQ)
 
 ![抗击疫情我们一定能赢](Image/1.png)
 
