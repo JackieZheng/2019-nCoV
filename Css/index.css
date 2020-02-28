@@ -141,14 +141,6 @@ body {
 	opacity: 0.9;
 }
 
-@media all and (max-width: 600px) {
-	.statistics li {
-		width: 33.3333%;
-	}
-	#main {
-		height: calc(100% - 205px);
-	}
-}
 .process {
 	height: 2px;
 	background-color: #9e9e9e12;
@@ -165,4 +157,38 @@ body {
 	left: 0;
 	margin-left: -10px;
 	top: -18px;
+}
+.freshDiv {
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+@keyframes flash-rotate {
+	0% {
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+.animation-rotate {
+	animation-name: flash-rotate;
+	animation-duration: 0.8s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: flash-rotate;
+	-webkit-animation-duration: 0.8s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@media all and (max-width: 600px) {
+	.statistics li {
+		width: 33.3333%;
+	}
+	#main {
+		height: calc(100% - 205px);
+	}
 }
