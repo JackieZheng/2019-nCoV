@@ -69,7 +69,9 @@ ncov web [https://github.com/pzhaonet/ncov](https://github.com/pzhaonet/ncov)
 
 周边疫情查询工具（腾讯）[https://ncov.html5.qq.com/communityRenmin](https://ncov.html5.qq.com/communityRenmin)
 
-### 资料
+### 资料资讯
+
+​ 中央最新通知！​ 大中小学等开学时间原则上继续推迟(2020-2-27) [https://mp.weixin.qq.com/s/fZRUW3Kv5VuB2kMuXEqDgw](https://mp.weixin.qq.com/s/fZRUW3Kv5VuB2kMuXEqDgw)
 
 《企事业单位复工复产疫情防控措施指南》 [https://mp.weixin.qq.com/s/RFETviol4fHyVEtjihHNiA](https://mp.weixin.qq.com/s/RFETviol4fHyVEtjihHNiA)
 
@@ -86,6 +88,8 @@ ncov web [https://github.com/pzhaonet/ncov](https://github.com/pzhaonet/ncov)
 ![除了战胜它我们别无选择](Image/2.png)
 
 ### 学习资源
+
+31 省市在线教育资源汇总来了！（PDF 版下载）[https://mp.weixin.qq.com/s/lqhjBJhowU35CBdJssO8NQ](https://mp.weixin.qq.com/s/lqhjBJhowU35CBdJssO8NQ)
 
 国家中小学网络云平台[http://ykt.eduyun.cn/](http://ykt.eduyun.cn/)
 
