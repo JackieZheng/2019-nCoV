@@ -119,6 +119,7 @@
 			yesterday_current_unconfirmed = 0, yesterday_current_serious = 0, yesterday_current_confirmed = 0;
 
 		var progress = 0;
+		var processDocTipsbg = 'rgba(235, 75, 30, 0.9)';
 
 		//3218435e78f4d1873ab412313d6d77c5
 		var dataApi = '';
@@ -377,21 +378,32 @@
 		/* 动态改变背景 及 进度 刷新按钮动画*/
 		function freshbackgroud(currentConfirmedCount, confirmedCount) {
 			progress = 1 - currentConfirmedCount / confirmedCount;
+
+			/*实时数据背景*/
 			$('#realTimeData').css({ 'background-color': 'rgba(130, 210, 10, ' + 0 + ')' });
 			$('#realTimeData').animate({ backgroundColor: 'rgba(130, 210, 10, ' + progress + ')' }, 3000);
 
+			/*进度条进度*/
 			$('.processValue').css({ 'width': 0 * 100 + '%' });
 			$('.processValue').animate({ width: progress * 100 + '%' }, 3000);
 
+			/*医生卡通位置*/
 			$('.processDoc').css({ 'left': 0 * 100 + '%' });
 			$('.processDoc').animate({ left: progress * 100 + '%' }, 3000);
 
+			/*卡通提示背景*/
+			let bgR = 255 * (1 - progress);
+			let bgG = 255 * progress;
+			processDocTipsbg = 'rgba(' + bgR + ', ' + bgG + ', 0, 0.9)'
+
+			/*刷新按钮动画*/
 			$(".freshBtn>svg").addClass("animation-rotate");
 			window.setTimeout(() => $(".freshBtn>svg").removeClass("animation-rotate"), 3000);
 
 		}
 
-		var tipContent = "1、数据每10分钟自动刷新一次，如有更新会在数字右上角提示。<br>"
+		var tipContent = ""
+			+ "1、数据每10分钟自动刷新一次，如有更新会在数字右上角提示。<br>"
 			+ "2、数字右下角为当前相对昨天24时官方数据的增（减）量。<br>"
 			+ "3、(实时数据采集自网络，仅供参考！实际数据以官方为准！！)<br>";
 		var tip_index = 0;
@@ -416,7 +428,7 @@
 					tip_index = layer.tips(docTipContent,
 						that,
 						{
-							tips: [1, 'rgba(235,75,30,0.9)'],
+							tips: [1, processDocTipsbg],
 							time: 0
 						});
 				}
