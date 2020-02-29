@@ -71,6 +71,10 @@ ncov web [https://github.com/pzhaonet/ncov](https://github.com/pzhaonet/ncov)
 
 ### 资料资讯
 
+重磅！更严防控，北京再发通告！(2020-2-28) [https://mp.weixin.qq.com/s/3cHknEo7UOyF_bxqv1FU_g](https://mp.weixin.qq.com/s/3cHknEo7UOyF_bxqv1FU_g)
+
+开学时间继续推迟！各地开学时间更新汇总(2020-2-28) [https://mp.weixin.qq.com/s/-Kwy4Tot15nwkHnovLC9cg](https://mp.weixin.qq.com/s/-Kwy4Tot15nwkHnovLC9cg)
+
 ​ 中央最新通知！​ 大中小学等开学时间原则上继续推迟(2020-2-27) [https://mp.weixin.qq.com/s/fZRUW3Kv5VuB2kMuXEqDgw](https://mp.weixin.qq.com/s/fZRUW3Kv5VuB2kMuXEqDgw)
 
 《企事业单位复工复产疫情防控措施指南》 [https://mp.weixin.qq.com/s/RFETviol4fHyVEtjihHNiA](https://mp.weixin.qq.com/s/RFETviol4fHyVEtjihHNiA)
