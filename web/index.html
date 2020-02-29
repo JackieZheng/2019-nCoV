@@ -253,6 +253,7 @@
 		$.getJSON("../Json/data.json?" + Date.parse(new Date()), function (data) {
 			dataSource = data;
 
+			option.legend.selected['累计确诊+现有疑似'] = false;
 			option.legend.selected['观察中'] = false;
 			option.legend.selected['死亡/确诊'] = false;
 			option.dataset.source = dataSource;
