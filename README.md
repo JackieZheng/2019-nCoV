@@ -113,4 +113,4 @@ ncov web [https://github.com/pzhaonet/ncov](https://github.com/pzhaonet/ncov)
 
 ## 全国各地开学时间一览表
 
-[![全国各地开学时间一览表](Image/xuexiao.jpeg)](https://baijiahao.baidu.com/s?id=1659137892911623930)
+开学时间继续推迟！各地开学时间更新汇总(2020-2-28) [https://mp.weixin.qq.com/s/-Kwy4Tot15nwkHnovLC9cg](https://mp.weixin.qq.com/s/-Kwy4Tot15nwkHnovLC9cg)
