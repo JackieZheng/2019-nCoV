@@ -71,6 +71,8 @@ ncov web [https://github.com/pzhaonet/ncov](https://github.com/pzhaonet/ncov)
 
 ### 资料资讯
 
+全国总工会： 企业应按正常标准向在家上班职工付工资 [http://www.acftu.org/template/10041/file.jsp?cid=222&aid=99904](http://www.acftu.org/template/10041/file.jsp?cid=222&aid=99904)
+
 重磅！更严防控，北京再发通告！(2020-2-28) [https://mp.weixin.qq.com/s/3cHknEo7UOyF_bxqv1FU_g](https://mp.weixin.qq.com/s/3cHknEo7UOyF_bxqv1FU_g)
 
 开学时间继续推迟！各地开学时间更新汇总(2020-2-28) [https://mp.weixin.qq.com/s/-Kwy4Tot15nwkHnovLC9cg](https://mp.weixin.qq.com/s/-Kwy4Tot15nwkHnovLC9cg)
