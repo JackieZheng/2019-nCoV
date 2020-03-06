@@ -71,6 +71,8 @@ ncov web [https://github.com/pzhaonet/ncov](https://github.com/pzhaonet/ncov)
 
 ### 资料资讯
 
+新冠肺炎疫情防控国家教育政策文件汇编（PDF下载） [https://mp.weixin.qq.com/s/-6KT3WHrieEBUe9oL5YPiQ](https://mp.weixin.qq.com/s/-6KT3WHrieEBUe9oL5YPiQ)
+
 《北京市新型冠状病毒肺炎防控指引》融媒体电子书 [https://mp.weixin.qq.com/s/NylDcIWu0p4QEpJr90hX0Q](https://mp.weixin.qq.com/s/NylDcIWu0p4QEpJr90hX0Q)
 
 全国总工会： 企业应按正常标准向在家上班职工付工资 [http://www.acftu.org/template/10041/file.jsp?cid=222&aid=99904](http://www.acftu.org/template/10041/file.jsp?cid=222&aid=99904)
