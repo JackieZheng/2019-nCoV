@@ -18,7 +18,7 @@
 
 > 国家卫生健康委 2020-2-21 将“新型冠状病毒肺炎”英文名称修订为“COVID-19”，与世界卫生组织命名保持一致，中文名称保持不变。[[国家卫生健康委]](http://www.nhc.gov.cn/yzygj/s7653p/202002/33393aa53d984ccdb1053a52b6bef810.shtml)
 
-[![点击查看图表](Image/20200315.png)](https://jackiezheng.github.io/2019-nCoV/web)
+[![点击查看图表](Image/20200316.png)](https://jackiezheng.github.io/2019-nCoV/web)
 
 [![点击查看图表](Image/20200220202226.png)](https://jackiezheng.github.io/2019-nCoV/web)
 
@@ -29,6 +29,8 @@
 ## 相关链接
 
 ### 开源项目
+
+2019 Novel Coronavirus COVID-19 (2019-nCoV) Data [https://github.com/CSSEGISandData/COVID-19](https://github.com/CSSEGISandData/COVID-19)
 
 武汉开源 [https://weileizeng.github.io/OpenSourceWuhan/](https://weileizeng.github.io/OpenSourceWuhan/)
 
