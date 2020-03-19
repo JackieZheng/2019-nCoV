@@ -1,5 +1,7 @@
 # 2019-nCoV(Covid-19)
 
+-----即时起每日数据不再更新----------
+
 [![GitHub license](https://img.shields.io/github/license/JackieZheng/2019-nCoV)](https://github.com/JackieZheng/2019-nCoV/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/JackieZheng/2019-nCoV)](https://github.com/JackieZheng/2019-nCoV/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/JackieZheng/2019-nCoV)](https://github.com/JackieZheng/2019-nCoV/network)
